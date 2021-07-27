@@ -18,4 +18,19 @@ public class MyStack {
     {
         myLinkedList.printNodes();
     }
+    public INode pop(){
+        return myLinkedList.pop();
+    }
+    public INode peek(){
+        return myLinkedList.head;
+    }
+    public boolean isEmpty(){
+        return myLinkedList.size()==0;
+    }
+    public boolean isFull(){
+        return myLinkedList.size() ==default_size;
+    }
+    public int size(){
+        return myLinkedList.size();
+    }
 }

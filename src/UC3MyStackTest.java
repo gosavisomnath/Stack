@@ -8,6 +8,18 @@ public class UC3MyStackTest {
         myStck.push(mySecondNode);
         myStck.push(myThirdNode);
         myStck.printStack();
+        System.out.println("Size : " + myStck.size());
+        System.out.println("IsFull : " + myStck.isFull());
+        System.out.println("IsEmpty : " + myStck.isEmpty());
+        System.out.println("Peek : " + myStck.peek().getKey());
+        myStck.push(new MyNode<>(80));
+        System.out.println("Pop-1 " + myStck.pop().getKey());
+        System.out.println("Pop-2 " + myStck.pop().getKey());
+        System.out.println("Pop-3 " + myStck.pop().getKey());
+        System.out.println("Size : " + myStck.size());
+        System.out.println("IsFull : " + myStck.isFull());
+        System.out.println("IsEmpty : " + myStck.isEmpty());
+        System.out.println("Pop-4 " + myStck.pop());
 
     }
 }
